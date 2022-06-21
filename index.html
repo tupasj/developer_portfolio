@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <title>Jeremy Tupas - Web Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -31,16 +37,13 @@
     <main>
       <h1 id="about-me">A bit about me</h1>
       <div class="about-me main-content-text">
-        I am computer programming student finishing up
-        my last year at San Jacinto College. During my education, I have learned
-        many different technologies and practices such as Agile development used
-        in the industry. Having been exposed to many programming languages at
-        school, I've eventually became fond of and gravitated toward web-related
-        tools, and eventually started learning more about web development as
-        much as I could outside of class hours. Below is the list of
-        technologies I use on a daily basis. In addition, I am starting to learn
-        the popular framework known as React. I look forward to learning and
-        working with you!
+        I am computer programming student finishing up my last year of college.
+        During my education, I have learned many different technologies and
+        development practices. Eventually I became fond of and gravitated toward
+        web-related tools, and eventually started learning more about web
+        development as much as I could outside of class hours. Below is the list
+        of technologies I use on a daily basis. The next thing I'm learning is
+        React JS. I look forward to learning and working with you!
       </div>
 
       <div class="skills-wrapper">
@@ -49,27 +52,28 @@
           <div class="skill skill-left">
             <img src="images/html5-logo.png" alt="HTML-logo" />
             <p class="main-content-text">
-              While one may be able to get by with just the basics of the markdown
-              language, I found that HTML has lots to provide such as ways to
-              organize code through semantic tags and built-in functionality
-              that can often save time from writing JS.
+              While one may be able to get by with just the basics of the
+              markdown language, I found that HTML has lots to provide such as
+              ways to organize code through semantic tags and built-in
+              functionality that can often save time from writing JS.
             </p>
           </div>
           <div class="skill skill-left">
             <img src="images/css-logo.png" alt="CSS-logo" />
             <p class="main-content-text">
-              I have been able to do all my styling with plain CSS and have used
-              it to style pretty much every project I've made so far. I have a
-              good grasp of its most useful features, including Flexbox and Grid.
+              My tool of choice for webpage styling is often plain CSS. I
+              have a good grasp of its most useful features, including Flexbox
+              and Grid. In addition, when a project gets more complex, I'll use
+              the SASS preprocessor to modularize the style code.
             </p>
           </div>
           <div class="skill skill-left">
             <img src="images/javascript-logo.png" alt="JS-logo" />
             <p class="main-content-text">
-              JavaScript is the first programming language I developed proficiency
-              in and I find it to be a rather fun language to work with. I use the
-              modern ES6 syntax and its various features, such as arrow functions,
-              ternary operators, modules, etc.
+              JavaScript is the first programming language I developed
+              proficiency in and I find it to be a rather fun language to work
+              with. I use the modern ES6 syntax and its various features, such
+              as arrow functions, ternary operators, modules, etc.
             </p>
           </div>
         </div>
@@ -87,9 +91,9 @@
             <p class="main-content-text">
               During my time in school I was involved in several group coding
               projects that required the use of GitHub, so I am familiar with
-              things like using branches, merging, and pull requests. We also were
-              making use of Agile practices and utilized project management tools
-              such as Trello and the GitHub Issues system.
+              things like using branches, merging, and pull requests. We also
+              were making use of Agile practices and utilized project management
+              tools such as Trello and the GitHub Issues system.
             </p>
             <img src="images/github-logo.png" alt="Github-logo" />
           </div>
@@ -99,34 +103,68 @@
       <h1 id="projects">My projects</h1>
       <div class="projects-container">
         <div class="project">
-          <span class="project-title">Admin dashboard</span>
-          <img src="images/admin-dashboard.png" alt="admin-dashboard-image">
-          <p class="project-description">A dashboard design made using pure HTML and CSS. This project heavily utilizes CSS Flexbox and Grid.</p>
+          <span class="project-title">Battleship</span>
+          <img src="images/battleship.png" alt="battleship" />
+          <p class="project-description">
+            A recreation of the popular game Battleship. This was developed with
+            a test driven development (TDD) workflow, using the Jest testing
+            framework.
+          </p>
           <div class="project-links">
-            <a href="https://feralturtle.github.io/TOP_AdminDashboard/" target="_blank"><button class="live-demo-btn">Live demo</button></a>
-            <a href="https://github.com/FeralTurtle/TOP_AdminDashboard" target="_blank"><button class="source-code-btn">Source code</button></a>
+            <a
+              href="https://tupasj.github.io/TOP_Battleship/"
+              target="_blank"
+              ><button class="live-demo-btn">Live demo</button></a
+            >
+            <a
+              href="https://github.com/tupasj/TOP_Battleship"
+              target="_blank"
+              ><button class="source-code-btn">Source code</button></a
+            >
           </div>
         </div>
         <div class="project">
-          <span class="project-title">Restaurant page</span>
-          <img src="images/restaurant-page.png" alt="restaurant-page-image">
-          <p class="project-description">A restaurant page that utilize Webpack, a module bundler that allows multiple JavaScript files to be compiled into one or fewer
-            files to optimize performance, and makes one write modular and cleaner code.
-            </p>
+          <span class="project-title">MacBook Pro Landing Page</span>
+          <img src="images/macbook-pro-landing-page.png" alt="macbook pro landing page" />
+          <p class="project-description">
+            A product landing page recreated using HTML and SASS paired with the
+            BEM naming convention to make more code readable. The site is also
+            fully responsive for the three standard sizes (desktop, tablet, and
+            mobile) by using media queries.
+          </p>
           <div class="project-links">
-            <a href="https://feralturtle.github.io/TOP_RestaurantPage/" target="_blank"><button class="live-demo-btn">Live demo</button></a>
-            <a href="https://github.com/FeralTurtle/TOP_RestaurantPage" target="_blank"><button class="source-code-btn">Source code</button></a>
+            <a
+              href="https://tupasj.github.io/MacBook_Pro_Landing_Page/"
+              target="_blank"
+              ><button class="live-demo-btn">Live demo</button></a
+            >
+            <a
+              href="https://github.com/tupasj/MacBook_Pro_Landing_Page"
+              target="_blank"
+              ><button class="source-code-btn">Source code</button></a
+            >
           </div>
         </div>
         <div class="project">
           <span class="project-title">Weather app</span>
-          <img src="images/weather-app.png" alt="weather-app-image">
-          <p class="project-description">This application fetches up-to-date weather data using the OpenWeatherMap API. Simply enter any location and the current, hourly, and weekly forecast will be
-            returned along with additional information such as local weather alerts if they are active.
-            </p>
+          <img src="images/weather-app.png" alt="weather-app-image" />
+          <p class="project-description">
+            This application fetches up-to-date weather data using the
+            OpenWeatherMap API. Simply enter any location and the current,
+            hourly, and weekly forecast will be returned along with additional
+            information such as local weather alerts if they are active.
+          </p>
           <div class="project-links">
-            <a href="https://feralturtle.github.io/TOP_WeatherApp/" target="_blank"><button class="live-demo-btn">Live demo</button></a>
-            <a href="https://github.com/FeralTurtle/TOP_WeatherApp" target="_blank"><button class="source-code-btn">Source code</button></a>
+            <a
+              href="https://tupasj.github.io/TOP_WeatherApp/"
+              target="_blank"
+              ><button class="live-demo-btn">Live demo</button></a
+            >
+            <a
+              href="https://github.com/tupasj/TOP_WeatherApp"
+              target="_blank"
+              ><button class="source-code-btn">Source code</button></a
+            >
           </div>
         </div>
       </div>
@@ -135,17 +173,40 @@
     <footer>
       <h1 id="contact">Contact</h1>
       <div class="contact-info">
-        <a href="mailto:jeremytupas@gmail.com" target="_blank"><img src="images/mail-icon.png" alt="email-icon"></a>
-        <a href="https://github.com/FeralTurtle" target="_blank"><img src="images/github-logo.png" alt="github-icon"></a>
-        <a href="https://www.linkedin.com/in/jeremy-tupas-b035611bb?trk=people-guest_people_search-card" target="_blank"><img src="images/linkedin-icon.png" alt="linkedin-icon"></a>
+        <a href="mailto:jeremytupas@gmail.com" target="_blank"
+          ><img src="images/mail-icon.png" alt="email-icon"
+        /></a>
+        <a href="https://github.com/tupasj" target="_blank"
+          ><img src="images/github-logo.png" alt="github-icon"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/jeremy-tupas-b035611bb?trk=people-guest_people_search-card"
+          target="_blank"
+          ><img src="images/linkedin-icon.png" alt="linkedin-icon"
+        /></a>
       </div>
       <div class="attributions">
-        <a href="https://www.flaticon.com/free-icons/html-5" title="html 5 icons">Html 5 icons created by Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/css" title="css icons">Css icons created by Freepik - Flaticon</a>
-        <a href="https://www.flaticon.com/free-icons/javascript" title="javascript icons">Javascript icons created by Smashicons - Flaticon</a>
-        <a target="_blank" href="https://icons8.com/icon/20906/git">Git</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/62856/github">GitHub</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-        <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a
+          href="https://www.flaticon.com/free-icons/html-5"
+          title="html 5 icons"
+          >Html 5 icons created by Freepik - Flaticon</a
+        >
+        <a href="https://www.flaticon.com/free-icons/css" title="css icons"
+          >Css icons created by Freepik - Flaticon</a
+        >
+        <a
+          href="https://www.flaticon.com/free-icons/javascript"
+          title="javascript icons"
+          >Javascript icons created by Smashicons - Flaticon</a
+        >
+        <a target="_blank" href="https://icons8.com/icon/20906/git">Git</a> icon
+        by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/62856/github"
+          >GitHub</a
+        >
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+        <a target="_blank" href="https://icons8.com/icon/85500/mail">Mail</a>
+        icon by <a target="_blank" href="https://icons8.com">Icons8</a>
       </div>
     </footer>
   </body>
