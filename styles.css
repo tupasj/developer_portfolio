@@ -64,10 +64,13 @@ a:link, a:visited {
 /* hero-header */
 .hero-header {
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    max-width: 85%;
     margin-top: 85px;
-    height: 65%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 12px 50px;
+    height: 65%;
 }
 
 .hero-text-container {
@@ -85,12 +88,12 @@ a:link, a:visited {
 }
 
 .hero-text-container > p:nth-child(2) {
-    float: right;
+    text-align: right;
     margin-top: 0;
 }
 
 .hero-header > img {
-    width: 75%;
+    width: 55%;
     height: 90%;
     align-self: end;
     float: right;
@@ -99,6 +102,12 @@ a:link, a:visited {
 /* Main */
 main {
     padding: 12px 25px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.about-me {
+    text-align: justify;
 }
 
 .main-content-text {
