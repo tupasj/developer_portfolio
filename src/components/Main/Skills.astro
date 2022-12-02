@@ -1,0 +1,80 @@
+---
+const skills = [
+  {
+    title: "HTML5",
+    image: "devicon-html5-plain colored",
+  },
+  {
+    title: "CS3",
+    image: "devicon-css3-plain colored",
+  },
+  {
+    title: "SASS",
+    image: "devicon-sass-original colored",
+  },
+  {
+    title: "JavaScript",
+    image: "devicon-javascript-plain colored",
+  },
+  {
+    title: "React",
+    image: "devicon-react-original colored",
+  },
+  {
+    title: "Jest",
+    image: "devicon-jest-plain colored",
+  },
+  {
+    title: "Git",
+    image: "devicon-git-plain colored",
+  },
+  {
+    title: "Photoshop",
+    image: "devicon-photoshop-plain colored",
+  },
+];
+---
+
+<section class="skills">
+  <h2>Skills</h2>
+  <div class="skills-wrapper">
+    {
+      skills.map((item) => {
+        return (
+          <div class="skill">
+            <span class="icon-wrapper">
+              <i class={item.image} />
+            </span>
+            <span>{item.title}</span>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>
+
+<style>
+  .skills {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 5%;
+  }
+  h2 {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .skills-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px;
+  }
+  .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icon-wrapper {
+    font-size: 100px;
+  }
+</style>

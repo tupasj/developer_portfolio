@@ -1,0 +1,159 @@
+---
+import ButtonRedirect from "../UI/ButtonRedirect.astro";
+
+const projects = [
+  {
+    title: "Portfolio Site",
+    src: "https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/portfolio-site.png",
+    alt: "portfolio site",
+    technologies: ["HTML", "CSS", "JavaScript", "Astro"],
+    description:
+      "Not too much to say here, you're already looking at it! Some things that can be pointed out here is the use of Astro.build, a static site generator(SSG), which is ideal for content-driven sites such as this one, as it is optimizes for static websites. This site was built using Astro components, which is similar to JSX in the way that it couples HTML/CSS/JS into a cohesive unit.",
+    liveDemo: "#",
+    sourceCode: "https://github.com/tupasj/developer_portfolio",
+  },
+  {
+    title: "Product Landing Page",
+    src: "https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/macbook-pro-landing-page.png",
+    alt: "macbook pro landing page",
+    technologies: ["HTML", "CSS", "SASS", "Responsive design"],
+    description:
+      "A product landing page clone of the Apple MacBook Pro. It has been designed to be fully responsive for three standard screen sizes (desktop, tablet, and mobile) by utilizing media queries. For styling, I used the CSS preprocessor SASS, paired with the BEM naming convention to enhance code readability.",
+    liveDemo: "https://tupasj.github.io/MacBook_Pro_Landing_Page/",
+    sourceCode: "https://github.com/tupasj/MacBook_Pro_Landing_Page",
+  },
+  {
+    title: "Twitch.tv Clone",
+    src: "https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/twitchtv-clone.png",
+    alt: "twitch.tv clone",
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Axios",
+      "Jest",
+      "React Testing Library",
+    ],
+    description:
+      "Cloned the popular livestreaming site Twitch.tv, replicating its visual design and including its core features. Implemented unit tests while incorporating testing techniques such as snapshots and mocking API calls. By interacting with the Twitch API and handling asynchronous operations within React, I integrated various features of the website, including live video and chat.",
+    liveDemo: "https://site-clone-6db61.firebaseapp.com/",
+    sourceCode: "https://github.com/tupasj/TOP_Site_Clone",
+  },
+  {
+    title: "Fake Store",
+    src: "https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/fake-store.png",
+    alt: "fake store",
+    technologies: ["HTML", "Tailwind CSS", "React", "Express", "MongoDB"],
+    description:
+      "Built a dynamic, multi-page fake shopping website using the MERN tech stack. In addition, the site's styling was handled with the CSS framework Tailwind CSS, which offers utility classes to utilize that not only speeds up writing CSS but ultimately provides a natural design system that has been agreed upon by developers and designers. In this site, users can create accounts, browse through various products, and add or remove items from their cart.",
+    liveDemo: "https://top-inventory-application-client.up.railway.app",
+    sourceCode: "https://github.com/tupasj/TOP_Inventory_Application",
+  },
+];
+---
+
+<section id="projects" class="projects">
+  <div class="projects-container">
+    <h2>Projects</h2>
+    <div class="projects-wrapper">
+      {
+        projects.map((project) => {
+          return (
+            <div class="project">
+              <h3 class="project-title">{project.title}</h3>
+              <div class="image-container">
+                <img src={project.src} alt={project.alt} />
+              </div>
+              <div class="technologies">
+                {project.technologies.map((technology) => {
+                  return (
+                    <>
+                      <span class="technology">{technology}</span>
+                    </>
+                  );
+                })}
+              </div>
+              <div class="description">{project.description}</div>
+              <div class="buttons-container">
+                <ButtonRedirect
+                  href={project.liveDemo}
+                  target="_blank"
+                  text="Live demo"
+                />
+                <ButtonRedirect
+                  href={project.sourceCode}
+                  target="_blank"
+                  text="Source code"
+                />
+              </div>
+            </div>
+          );
+        })
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .projects {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    transform: skewY(9deg);
+    text-align: center;
+  }
+  .projects-container {
+    transform: skewY(-9deg);
+  }
+  h2 {
+    margin-bottom: 30px;
+    color: var(--dark-blue);
+  }
+  .projects-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .project {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: auto auto auto 1fr;
+    padding: 18px;
+    max-width: 335px;
+  }
+  .project-title {
+    padding-bottom: 12px;
+    font-weight: bold;
+  }
+  .image-container {
+    width: 300px;
+    margin-bottom: 11px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+  }
+  .technologies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .technology {
+    border-radius: 14px;
+    padding: 6.5px;
+    color: white;
+  }
+  .description {
+    margin-bottom: 7px;
+    line-height: 1.25;
+  }
+  .buttons-container {
+    align-self: end;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+</style>

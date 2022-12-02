@@ -1,0 +1,28 @@
+---
+const { href, target, text } = Astro.props;
+---
+
+<a class="button-redirect" href={href} target={target}>
+  <span>{text}</span>
+  <span class="icon-wrapper">
+    <i class="fa-solid fa-up-right-from-square"></i>
+  </span>
+</a>
+
+<style>
+  .button-redirect {
+    display: flex;
+    gap: 5px;
+    padding: 6px;
+    border-radius: 9px;
+    background-color: var(--regular-turquoise);
+    cursor: pointer;
+    transition: transform 200ms;
+  }
+  .button-redirect:hover {
+    transform: scale(1.05) translate(4px, -2px);
+  }
+  .icon-wrapper {
+    font-size: 17px;
+  }
+</style>

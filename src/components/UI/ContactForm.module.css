@@ -1,0 +1,49 @@
+@media (max-width: 762px) {
+  .send {
+    width: 35%;
+  }
+}
+
+form {
+  display: grid;
+  gap: 23px;
+  padding: 25px;
+}
+
+/* Notification box */
+.error {
+  color: red;
+}
+
+.honeypot {
+  display: none;
+}
+
+/* Form elements */
+.formInput {
+  border: 2px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+textarea {
+  height: 250px;
+  resize: none;
+  border: 2px solid var(--light-blue);
+  border-radius: 5px;
+}
+
+.send {
+  justify-self: center;
+  padding: 6px;
+  width: 25%;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  color: white;
+  background-color: var(--light-blue);
+  cursor: pointer;
+}
+
+.iconWrapper {
+    margin-left: 6px;
+}
