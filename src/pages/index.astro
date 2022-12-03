@@ -1,22 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header/Header.astro';
-import Banner from '../components/Main/Banner.astro';
-import About from '../components/Main/About.astro';
-import Skills from '../components/Main/Skills.astro';
-import Projects from '../components/Main/Projects.astro';
-import Contact from '../components/Main/Contact.astro';
-import { ContactForm } from '../components/UI/ContactForm';
-import Footer from '../components/Footer/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header/Header.astro";
+import Main from "../components/Main/Main.astro";
+import Footer from "../components/Footer/Footer.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<Header />
-	<Banner />
-	<About />
-	<Skills />
-	<Projects />
-	<Contact />
-	<ContactForm client:load />
-	<Footer />
+  <Header />
+  <Main />
+  <Footer />
 </Layout>

@@ -1,5 +1,6 @@
 ---
 import ButtonRedirect from "../UI/ButtonRedirect.astro";
+import AnchorTarget from "../UI/AnchorTarget.astro";
 
 const projects = [
   {
@@ -8,7 +9,7 @@ const projects = [
     alt: "portfolio site",
     technologies: ["HTML", "CSS", "JavaScript", "Astro"],
     description:
-      "Not too much to say here, you're already looking at it! Some things that can be pointed out here is the use of Astro.build, a static site generator(SSG), which is ideal for content-driven sites such as this one, as it is optimizes for static websites. This site was built using Astro components, which is similar to JSX in the way that it couples HTML/CSS/JS into a cohesive unit.",
+      "Not too much to say here, you're already looking at it! Some things that can be pointed out here is the use of Astro.build, a static site generator (SSG), which is ideal for content-driven sites such as this one, as its optimized for static websites. This site was built using Astro components, which is similar to JSX in the way that it couples HTML/CSS/JS into a cohesive unit.",
     liveDemo: "#",
     sourceCode: "https://github.com/tupasj/developer_portfolio",
   },
@@ -31,7 +32,6 @@ const projects = [
       "CSS",
       "JavaScript",
       "React",
-      "Axios",
       "Jest",
       "React Testing Library",
     ],
@@ -41,10 +41,17 @@ const projects = [
     sourceCode: "https://github.com/tupasj/TOP_Site_Clone",
   },
   {
-    title: "Fake Store",
+    title: "E-Commerce Store",
     src: "https://cdn.jsdelivr.net/gh/tupasj/developer_portfolio/src/images/fake-store.png",
     alt: "fake store",
-    technologies: ["HTML", "Tailwind CSS", "React", "Express", "MongoDB"],
+    technologies: [
+      "HTML",
+      "Tailwind CSS",
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     description:
       "Built a dynamic, multi-page fake shopping website using the MERN tech stack. In addition, the site's styling was handled with the CSS framework Tailwind CSS, which offers utility classes to utilize that not only speeds up writing CSS but ultimately provides a natural design system that has been agreed upon by developers and designers. In this site, users can create accounts, browse through various products, and add or remove items from their cart.",
     liveDemo: "https://top-inventory-application-client.up.railway.app",
@@ -53,8 +60,9 @@ const projects = [
 ];
 ---
 
-<section id="projects" class="projects">
+<section class="projects">
   <div class="projects-container">
+    <AnchorTarget id="projects" offset={"-75px"} />
     <h2>Projects</h2>
     <div class="projects-wrapper">
       {
@@ -103,6 +111,7 @@ const projects = [
     padding-bottom: 7%;
     transform: skewY(9deg);
     text-align: center;
+    background-color: var(--regular-gray);
   }
   .projects-container {
     transform: skewY(-9deg);
@@ -122,7 +131,9 @@ const projects = [
     justify-items: center;
     grid-template-rows: auto auto auto 1fr;
     padding: 18px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.25);
     max-width: 335px;
+    background-color: var(--light-gray);
   }
   .project-title {
     padding-bottom: 12px;
@@ -144,6 +155,7 @@ const projects = [
   .technology {
     border-radius: 14px;
     padding: 6.5px;
+    background-color: var(--dark-blue);
     color: white;
   }
   .description {
@@ -155,5 +167,8 @@ const projects = [
     display: flex;
     justify-content: center;
     gap: 15px;
+  }
+  img {
+    width: inherit;
   }
 </style>

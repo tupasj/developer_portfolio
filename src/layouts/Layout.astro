@@ -82,8 +82,10 @@ const { title } = Astro.props;
     --light-blue: #40778c;
     --light-gray: #fafafa;
   }
-  html,
-  body {
+  html {
+    scroll-behavior: smooth;
+  }
+  html, body {
     min-height: 100%;
     font-family: Geneva, Verdana, sans-serif;
   }

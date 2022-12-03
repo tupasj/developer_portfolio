@@ -1,0 +1,14 @@
+---
+const { id, offset } = Astro.props;
+---
+
+<div id={id} class="anchor-target"></div>
+
+<style define:vars={{ id, offset }}>
+  div {
+    visibility: hidden;
+    display: block;
+    position: relative;
+    top: var(--offset);
+  }
+</style>

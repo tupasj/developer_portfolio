@@ -1,4 +1,6 @@
 ---
+import AnchorTarget from "../UI/AnchorTarget.astro";
+
 const skills = [
   {
     title: "HTML5",
@@ -36,6 +38,7 @@ const skills = [
 ---
 
 <section class="skills">
+  <AnchorTarget id="skills" offset={"-75px"} />
   <h2>Skills</h2>
   <div class="skills-wrapper">
     {
@@ -55,9 +58,12 @@ const skills = [
 
 <style>
   .skills {
+    position: relative;
+    z-index: 1;
     padding-left: 9%;
     padding-right: 9%;
-    padding-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
   h2 {
     margin-bottom: 45px;
